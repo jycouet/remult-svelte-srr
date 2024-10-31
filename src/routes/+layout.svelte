@@ -4,9 +4,18 @@
 
 <div style="display: flex; flex-direction: column; gap: 10px">
   <div>
-    <a href="/">Home</a>
-    <a href="/todos">todos</a>
+    <a class="nav-link" style="margin-right: 10px" href="/">Home</a>
+    <a class="nav-link" style="margin-right: 10px" href="/todos">todos</a>
+    <a class="nav-link" style="margin-right: 10px" href="/todos?limit=2"
+      >todos</a
+    >
   </div>
+
+  <style>
+    .nav-link:hover {
+      background-color: red;
+    }
+  </style>
 
   <slot />
 </div>
