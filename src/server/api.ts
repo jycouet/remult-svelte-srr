@@ -13,10 +13,10 @@ export const api = remultSveltekit({
   // dataProvider: new SqlDatabase(
   //   new BetterSqlite3DataProvider(new Database("./mydb.sqlite"))
   // ),
-  dataProvider: createPostgresDataProvider({
-    connectionString: "postgres://postgres:example@127.0.0.1:5433/test",
-    // configuration: {} // optional: a `pg.PoolConfig` object or "heroku"
-  }),
+  // dataProvider: createPostgresDataProvider({
+  //   connectionString: "postgres://postgres:example@127.0.0.1:5433/test",
+  //   // configuration: {} // optional: a `pg.PoolConfig` object or "heroku"
+  // }),
   initApi: async () => {
     // const todos = await remult.repo(Task).find();
     // console.log(`todo234`, todos);

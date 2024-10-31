@@ -1,8 +1,6 @@
-import { remult, RestDataProvider } from "remult";
+import { remult } from "remult";
 import type { LayoutLoad } from "./$types";
 
 export const load = (async (event) => {
-  remult.dataProvider = new RestDataProvider(() => ({
-    httpClient: event.fetch,
-  }));
+  remult.useFetch(event.fetch);
 }) satisfies LayoutLoad;
