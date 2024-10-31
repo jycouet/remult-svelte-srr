@@ -13,6 +13,6 @@ export class Task {
   @Fields.boolean()
   completed = false;
 
-  @Fields.createdAt()
+  @Fields.createdAt({ includeInApi: false })
   createdAt?: Date;
 }
